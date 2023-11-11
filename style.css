@@ -185,7 +185,7 @@ button:hover,
 
     .headline {
         width: 100%;
-        min-width: 393px;
+        min-width: 350px;
     }
 
     .icon {
@@ -198,7 +198,7 @@ button:hover,
 @media (max-width: 615px) {
     .cta {
         width: 100%;
-        min-width: 393px;
+        min-width: 350px;
     }
 }
 
