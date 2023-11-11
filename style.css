@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#0a0a0b;
+}
+
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+
+header, button, h1, h2 {
+    color: white;
+    font-family: 'Prata', sans-serif;
+    font-weight: 100;
+}
+
+header {
+    padding-top: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    color: white;
+    font-family: 'Prata', sans-serif;
+    font-size: 1.2rem;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    margin: auto 10px;
+    text-decoration-line: none;
+}
+
+button {
+    width: 10em;
+    height: 3em;
+    border-style: none;
+    background-color: #ffe206;
+    color:#0a0a0b;
+    font-size: 1.2em;
+}
+
+.headline {
+    width: 60%;
+    min-width: 725px;
+}
+
+h1 {
+    margin-top: 1em;
+    font-size: 3.5rem;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+p, 
+a {
+    color: #d6d4d491;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2em;
+}
+
+p {
+    margin-top: 0.5em;
+    line-height: 1.5em;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.icon img {
+    margin: 0.5em 1em;
+}
+
+figure {
+    margin: 3em 0;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4em;
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.portfolio-spense {
+    grid-column: 1;
+}
+
+.portfolio-yelpcmap {
+    grid-column: 2;
+}
+
+.grey-background {
+    background-color: #3c404b;
+    margin-top: 40px;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.bio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4em;
+}
+
+.cta {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 50%;
+    min-width: 605px;
+}
+
+.cta button {
+    margin-top: 1.5em;
+}
+
+footer .container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer.grey-background{
+    padding: 0;
+}
+
+.social-media-icon img{
+    margin: 0 0.3em;
+}
+
+button:hover,
+.social-media-icon img:hover,
+.portfolio-spense h2:hover,
+.portfolio-yelpcamp h2:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    header {
+        font-size: 0.8em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .portfolio {
+        grid-template-columns: 1fr; /* Change to a single column layout on smaller screens */
+    }
+
+    .bio {
+        grid-template-columns: 1fr;
+    }
+
+    header nav, 
+    header button {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .headline {
+        width: 100%;
+        min-width: 393px;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media (max-width: 615px) {
+    .cta {
+        width: 100%;
+        min-width: 393px;
+    }
+}
+
+@media (max-width: 428px) {
+    h1 {
+        font-size: 2.3em;
+    }
+    
+}
+
+
+
+/* tablet width: 768px */
+/* mobile width: 428px */
